@@ -67,7 +67,6 @@ def welcome():
 top = Tk()
 top.title("Welcome to an automated atm Machine")
 top.geometry("400x50")
-top.colormapwindows(3)
 
 def CashWith():
     welcome()
