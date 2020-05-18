@@ -1,2 +1,2 @@
-102 Hina English 41
-			Total 41
+Id:102, Name:Hina, Subject:English, Marks:41
+								Total 41

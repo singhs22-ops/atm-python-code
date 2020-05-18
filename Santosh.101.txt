@@ -1,3 +1,5 @@
-101 Santosh maths 35
-101 Santosh Hindi 30
-			Total 65
+Id:101, Name:Santosh, Subject:maths, Marks:35
+Id:101, Name:Santosh, Subject:Hindi, Marks:30
+Id:101, Name:Santosh, Subject:sci, Marks:88
+Id:101, Name:Santosh, Subject:sst, Marks:66
+								Total 219

@@ -1,3 +1,7 @@
 101 Santosh maths 35
 101 Santosh Hindi 30
 102 Hina English 41
+101 Santosh sci 88
+101 Santosh sst 66
+107 Neha sci 99
+108 Neha art 88

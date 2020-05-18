@@ -25,7 +25,7 @@ def getword_a(test_str,n):
             res = res + ele
 
     # printing result
-    print("Nth word : " + res)
+    #print("Nth word : " + res)
     return res
 
 
@@ -52,13 +52,13 @@ file_txt =open("student.txt","r+")
 for line in file_txt:
 
     res1 = line
-    print("lines", line)
+    #print("lines", line)
     res=res1[:3]
     word1 = getword_a(res1,4)
     if (res in total_marks):
         total_marks[res] = total_marks[res]+int(word1)
         #total marks
-        print("totalmarks::",total_marks[res])
+        #print("totalmarks::",total_marks[res])
         arr_final = over[res] + res1
 
         over.pop(res)
@@ -78,9 +78,27 @@ for line in file_txt:
 
 for result in total_marks:
     fileher = open(dict_filen[result], "w")
-    fileher.write(over[result])
-    fileher.write("\t\t\tTotal ")
+    newdata = over[result].split()
+    llist = ["Id:","Name:","Subject:","Marks:"]
+    j=0
+    k=1
+    for i in newdata:
+        if(i != '\n'):
+            i =llist[j%4]+""+i
+            fileher.write(i)
+
+            if(k%4==0 and (k>2)):
+                fileher.write('\n')
+            else:
+                fileher.write(", ")
+
+            newdata[k-1]=i
+            k=k+1
+            j=j+1
+
+
+    fileher.write("\t\t\t\t\t\t\t\tTotal ")
     fileher.write(str(total_marks[result]))
-    print(result)
+
 
 file_txt.close()
